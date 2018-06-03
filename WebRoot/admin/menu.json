@@ -1,0 +1,22 @@
+{
+   "menus" : [{"icon" : "icon-sys","menuid" : "1","menuname" : "人员信息","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "普通用户信息","url" : "views/users.jsp" },
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "交警信息","url" : "views/traffic.jsp"}
+                 ]
+                },
+              {"icon" : "icon-sys","menuid" : "1","menuname" : "罚单信息","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "所有罚单信息","url" : "views/ticket.jsp" }
+                ]
+               },
+              {"icon" : "icon-sys","menuid" : "1","menuname" : "用户信息","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "基本信息","url" : "views/managerDetial.jsp" }
+                ]
+               },
+              {"icon" : "icon-sys","menuid" : "1","menuname" : "公告","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "公告信息","url" : "views/notice.jsp" },
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "添加公告信息","url" : "views/addNotice.jsp" }
+                ]
+               }
+               
+              ]
+}

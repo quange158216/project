@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2018 9:36:51 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.itcast.tpms.domain.Ticket" table="ticket" catalog="tpms">
+        <id name="tid" type="string">
+            <column name="tid" length="32" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="traffic" class="cn.itcast.tpms.domain.Traffic" fetch="select">
+            <column name="pid" length="32" not-null="true">
+                <comment>&#189;&#187;&#190;&#175;&#205;&#226;&#188;&#252;</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="detialCat" class="cn.itcast.tpms.domain.DetialCat" fetch="select">
+            <column name="dlicense_plate_number" length="32" not-null="true">
+                <comment>&#198;&#251;&#179;&#181;&#205;&#226;&#188;&#252;</comment>
+            </column>
+        </many-to-one>
+        <property name="ttime" type="timestamp">
+            <column name="ttime" length="19" not-null="true">
+                <comment>&#206;&#165;&#183;&#168;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="tsite" type="string">
+            <column name="tsite" length="32" not-null="true">
+                <comment>&#206;&#165;&#183;&#168;&#181;&#216;&#181;&#227;</comment>
+            </column>
+        </property>
+        <property name="tunlawfulAct" type="string">
+            <column name="tunlawful_act" length="32" not-null="true">
+                <comment>&#206;&#165;&#183;&#168;&#208;&#208;&#206;&#170;</comment>
+            </column>
+        </property>
+        <property name="tscore" type="int">
+            <column name="tscore" not-null="true">
+                <comment>&#188;&#199;&#183;&#214;</comment>
+            </column>
+        </property>
+        <property name="tfine" type="java.lang.Integer">
+            <column name="tfine">
+                <comment>&#183;&#163;&#191;&#238;</comment>
+            </column>
+        </property>
+        <property name="tstate" type="string">
+            <column name="tstate" length="2" not-null="true">
+                <comment>
+                &#215;&#180;&#204;&#172;&#188;&#180;&#202;&#199;&#183;&#241;&#210;&#209;&#180;&#166;&#192;&#237;&#163;&#186;0&#210;&#209;&#180;&#166;&#192;&#237;&#163;&#172;1&#206;&#180;&#180;&#166;&#192;&#237;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

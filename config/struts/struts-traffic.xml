@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ <struts>
+
+ 	<package name="traffic" namespace="/traffic" extends="common">
+ 		<action name="*" class="trafficAction" method="{1}">
+ 			<result name="login">/traffic/views/login.jsp</result>
+ 			<result name="main">/traffic/index.jsp</result>
+ 			<result name="reg">/traffic/views/reg.jsp</result>
+ 			<result name="success">/traffic/views/success.jsp</result>
+ 		</action>
+		
+ 	</package>
+ </struts>

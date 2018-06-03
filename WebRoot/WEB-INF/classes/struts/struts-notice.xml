@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ <struts>
+
+ 	<package name="notice" namespace="/notice" extends="common">
+ 		<action name="*" class="noticeAction" method="{1}">
+ 			<result name="showUserMain" type="redirect">/main.jsp</result>
+ 			<result name="showTrafficMain" type="redirect">/traffic/index.jsp</result>
+ 			<result name="notice">/views/notice.jsp</result>
+ 			<result name="detialNotice" >/views/detialNotice.jsp</result>
+ 			<result name="addResult" >/admin/views/addNoticeResult.jsp</result>
+ 			<result name="adminNotice" >/admin/views/notice.jsp</result>
+ 		</action>
+		
+ 	</package>
+ </struts>

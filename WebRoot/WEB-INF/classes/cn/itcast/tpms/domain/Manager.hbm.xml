@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2018 9:36:51 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.itcast.tpms.domain.Manager" table="manager" catalog="tpms">
+        <id name="mid" type="string">
+            <column name="mid" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="mname" type="string">
+            <column name="mname" length="32" not-null="true">
+                <comment>&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="mpassword" type="string">
+            <column name="mpassword" length="32" not-null="true">
+                <comment>&#195;&#220;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="msex" type="string">
+            <column name="msex" length="4" not-null="true">
+                <comment>&#208;&#212;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="mage" type="int">
+            <column name="mage" not-null="true">
+                <comment>&#196;&#234;&#193;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

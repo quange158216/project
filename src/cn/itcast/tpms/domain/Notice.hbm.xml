@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2018 9:36:51 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.itcast.tpms.domain.Notice" table="notice" catalog="tpms">
+        <id name="nid" type="string">
+            <column name="nid" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="ntext" type="string">
+            <column name="ntext" length="65535" not-null="true" />
+        </property>
+        <property name="ttime" type="java.util.Date">
+            <column name="ttime" length="10" not-null="true" />
+        </property>
+        <property name="ntitle" type="string">
+            <column name="ntitle" length="100" not-null="true" />
+        </property>
+        <property name="nauthor" type="string">
+            <column name="nauthor" length="32" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

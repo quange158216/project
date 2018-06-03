@@ -1,0 +1,20 @@
+{
+   "menus" : [{"icon" : "icon-sys","menuid" : "1","menuname" : "车辆信息","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "车辆信息","url" : "views/detialCat.jsp"
+                 },
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "违章信息","url" : "views/ticket.jsp"
+                 }
+                ]
+               },
+               {"icon" : "icon-sys","menuid" : "1","menuname" : "用户信息","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "基本信息","url" : "views/detialuser.jsp"
+                 }
+                ]
+               },
+               {"icon" : "icon-sys","menuid" : "1","menuname" : "公告","url" : "","menus" : [
+                 {"icon" : "icon-log","menuid" : "1_1","menuname" : "公告信息","url" : "views/notice.jsp"
+                 }
+                ]
+               }
+             ]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2018 9:36:51 AM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.itcast.tpms.domain.Traffic" table="traffic" catalog="tpms">
+        <id name="pid" type="string">
+            <column name="pid" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="ppassword" type="string">
+            <column name="ppassword" length="32" not-null="true">
+                <comment>&#195;&#220;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="pname" type="string">
+            <column name="pname" length="12" not-null="true">
+                <comment>&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="psex" type="string">
+            <column name="psex" length="4" not-null="true">
+                <comment>&#208;&#212;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="page" type="int">
+            <column name="page" not-null="true">
+                <comment>&#196;&#234;&#193;&#228;</comment>
+            </column>
+        </property>
+        <property name="ticket" type="string">
+            <column name="ticket" length="32" />
+        </property>
+        <property name="ppic" type="string">
+            <column name="ppic" length="200">
+                <comment>&#205;&#188;&#198;&#172;</comment>
+            </column>
+        </property>
+        <set name="tickets" table="ticket" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="pid" length="32" not-null="true">
+                    <comment>&#189;&#187;&#190;&#175;&#205;&#226;&#188;&#252;</comment>
+                </column>
+            </key>
+            <one-to-many class="cn.itcast.tpms.domain.Ticket" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,73 @@
+	body,html,form,div,p,a,input{
+		margin: 0;
+		padding: 0;
+	}
+	body,html{
+		background: url(../images/bg3.jpg) no-repeat;
+		background-size: 100% 103%;
+		background-color: #000;
+		height:100%;
+	}
+	.logo-container{
+		position: absolute;
+		width: 500px;
+		background: rgba(3,63,173,0.3);
+		top: 20%;
+		left: 38%;
+		letter-spacing: 2px;
+	}
+	.logo-container p{
+		margin-left: 35%;
+		position: absolute;
+		margin-top: 3%;
+	}
+	.logo-container form{
+		padding: 60px 100px 50px 90px;
+		color: #fff;
+		line-height: 20px;
+	}
+	.logo-container form input{
+		font-size: 16px;
+		padding-left: 10px;
+		margin-bottom: 15px;
+		height: 20px;
+		margin-left: 20px;
+		background: #000;
+		border: 1px solid #56585a;
+		color: #fff;
+		height: 28px;
+	}
+	.logo-container form .sub{
+		cursor: pointer;
+		font-size: 14px;
+		height: 28px;
+		background: rgb(53,152,219 );
+		border: 1px rgb(53,152,255) solid;
+		border-radius: 5px;
+		margin-left: 25%;
+		padding-right:10px ;
+	}
+	.logo-container form .sub:hover{
+		background: rgba(53,152,219,.7);
+	}
+	.logo-container form .reg-a{
+		display: inline-block;
+		height: 28px;
+		background: rgb(53,152,219);
+		border: 1px rgb(53,152,255) solid;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 14px;
+		color: #fff;
+		margin-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		vertical-align: bottom;
+		box-sizing: border-box;
+		line-height: 26px;
+		margin-left: 88px;
+		font-weight: 500;
+	}
+	.logo-container form .reg-a:hover{
+		background: rgba(53,152,219,.7);
+	}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ <struts>
+
+ 	<package name="ticket" namespace="/ticket" extends="common">
+		<action name="*" class="ticketAction" method="{1}">
+			
+		</action>
+ 	</package>
+ 	<package name="ticket2" namespace="/123/ticket" extends="common">
+		<action name="*" class="ticketAction" method="{1}">
+			
+		</action>
+ 	</package>
+ </struts>

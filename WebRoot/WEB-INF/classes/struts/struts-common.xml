@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ <struts>
+ 	<!-- 常量配置 -->
+ 	<!-- 字符集 -->
+ 	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+ 	<!-- 开发模式 -->
+ 	<constant name="struts.devMode" value="true"></constant>
+ 	<!-- 主题 -->
+ 	<constant name="struts.ui.theme" value="simple"></constant>
+ 	<!-- 扩展名 -->
+ 	<constant name="struts.action.extension" value="action"></constant>
+ 	
+ 	<!-- 通用packge -->
+ 	<package name="common" namespace="/" extends="struts-default">
+		<!-- 配置全局结果 --> 
+		<action name="test" class="usersAction" method="test">
+			<result name="test">/views/test.jsp</result>
+		</action>	
+ 	</package>
+ </struts>

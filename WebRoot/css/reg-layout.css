@@ -1,0 +1,86 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html{
+		background: url(../images/bg3.jpg) no-repeat;
+		background-size: 100% 103%;
+		font-family: "微软雅黑","宋体",serif;
+		height:100%;
+	}
+	.reg-container{
+		background: rgba(3,63,173,0.3);
+		margin: 100px auto;
+		width: 700px;
+		color: #fff;
+		font-size: 14px;
+		line-height: 2em;
+		padding-bottom: 60px;
+	}
+	.reg-container p:first-child{
+		display: block;
+		height: 30px;
+		font-size: 20px;
+		line-height: 30px;
+		text-indent: 2em;
+		position: absolute;
+	}
+	.reg-container .reg-header{
+		font-size: 32px;
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 20px;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.reg-container form table .text-input input{
+		background: rgba(0,0,0,.9);
+		margin: 15px 0px;
+		height: 28px;
+		width: 200px;
+		border: 1px solid #56585a;
+		border-radius: 3px;
+		color: #fff;
+		padding: 10px;
+	}
+	.reg-container form table td{
+		padding: 0 5px;
+		text-align: center;
+		border: 1px #ccc solid;
+	}
+	.reg-container form table{
+		color: #fff;
+		margin: 0 auto;
+		border-collapse: collapse;
+		border-color: #ccc;
+	}
+	.reg-container form table .reg-sex{
+		height: 60px;
+		text-align: left;
+	}
+	.reg-container form table .reg-sex label{
+		margin-right: 20px;
+	}
+	.reg-container form table .reg-sex input{
+		margin-right: 5px;
+	}
+	.reg-container form table .sub-btn{
+		display: inline-block;
+		height: 32px;
+		background: #098cc8;
+		border: 1px #33a8df solid;
+		border-radius: 3px;
+		font-size: 14px;
+		color: #fff;
+		padding: 0 40px;
+		cursor: pointer;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.reg-container form table .sub-btn:first-child{
+		margin-right: 50px;
+	}
+	#psw-info{
+		width: 200px;
+	}
